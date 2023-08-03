@@ -1,0 +1,76 @@
+#mid{
+    background-image: url('../../assets/mid-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.dark-box-txt {
+    background-color: #283542ef;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 3px 10px #2d2d2d69;
+    max-width: 80%;
+}
+
+#mid .hero-txt{
+    color: white;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+@media (max-width: 550px) {
+    .dark-box-txt {
+        padding: 10px;
+        font-size: 13px;
+        max-height: 50vw;
+        max-width: 95%;
+    } 
+    
+    #mid .hero-txt{
+        font-size:large;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 768px) {    
+    .dark-box-txt {
+        padding: 20px;
+        max-height: 35vw;
+        max-width: 95%;
+    }
+
+    #mid .hero-txt{
+        font-size:x-large;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .dark-box-txt {
+        margin-top: 2%;
+        padding: 40px;
+        font-size: 20px;
+        max-height: 35vw;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .dark-box-txt {
+        margin-top: 3%;
+        padding: 30px;
+        font-size: 23px;
+        max-height: 35vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dark-box-txt {
+        margin-top: 3%;
+        padding: 40px;
+        font-size: 25px;
+        max-height: 35vw;
+    }
+
+}

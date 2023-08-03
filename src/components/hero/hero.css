@@ -1,0 +1,90 @@
+#hero{
+    background-image: url('../../assets/hero-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+}
+
+.hero-title{
+    text-align: center;
+    text-shadow:  3px 3px #2d2d2d69;
+}
+
+.hero-txt{
+    text-align: center;
+    text-shadow:  3px 3px #2d2d2d69;
+}
+
+.txt-container{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    #hero{
+        padding-top: 25vh;
+        padding-bottom: 5vh;
+    }
+
+    .txt-container{
+        margin-top: -15%;
+    }
+    
+    .hero-title{
+        font-size:25px;
+    }
+    
+    .hero-txt{
+        font-size: 15px;
+        margin-top: -3%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .txt-container{
+        margin-top: -10%;
+    }
+    
+    .hero-title{
+        font-size:35px;
+    }
+    
+    .hero-txt{
+        font-size: 18px;
+        margin-top: -3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .hero-title{
+        font-size:35px;
+        margin-top: -15px;
+    }
+    
+    .hero-txt{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .hero-title{
+        font-size:45px;
+    }
+    
+    .hero-txt{
+        font-size: 20px;
+        margin-top: -15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-title{
+        font-size:50px;
+    }
+    
+    .hero-txt{
+        font-size: 25px;
+        margin-top: -15px;
+    }
+}

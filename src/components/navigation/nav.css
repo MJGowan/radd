@@ -1,10 +1,11 @@
 #nav{
     position:fixed;
     z-index: 2;
+    background-color: #283542;
 }
 
-.bg{
-    background-color: #283542;
+.logo-img{
+    padding:10px;
 }
 
 .nav-items{

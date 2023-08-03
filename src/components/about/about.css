@@ -1,0 +1,104 @@
+.holdTxt {
+    max-width: 65%;
+}
+
+.about-txt {
+    padding-top: 2vh;
+}
+
+.holdMom{
+    max-width: 30%;
+}
+.mom{
+    aspect-ratio: 1/1;
+    max-height: 450px;
+}
+
+
+@media (max-width: 414px) {
+    #about {
+        margin-top: -5vh;
+    }
+
+    .holdMom {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: -10vh;
+    }
+
+    .mom{
+        max-height: 225px;
+    }
+
+    .holdTxt {
+        max-width: 100%;
+    }
+
+    .about-txt {
+        padding-top: 2vh;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+    #about {
+        margin-top: -3vh;
+    }
+
+    .holdMom {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: -9vh;
+    }
+
+    .mom{
+        max-height: 275px;
+    }
+
+    .holdTxt {
+        max-width: 100%;
+    }
+
+    .about-txt {
+        padding-top: 2vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    #about {
+        margin-top: -3vh;
+    }
+    
+    .holdTxt{
+        max-width: 55%;
+    }
+
+    .holdMom {
+        display: flex;
+        justify-content: start;
+        margin-top: -9vh;
+        margin-left: -20px;
+    }
+    .mom{
+        max-height: 425px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .holdTxt{
+        max-width: 60%;
+    }
+    
+    .holdMom {
+        float: right;
+        margin-top: -20vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .holdMom {
+        float: right;
+        margin-top: -23vh; 
+    }
+}
