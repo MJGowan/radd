@@ -16,7 +16,7 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className='lato'>
       <Container>
         <Row className='mb-2'>
-          <label htmlFor="email">
+          <label htmlFor="email" style={{color: 'white'}}>
             Email Address
           </label>
         </Row>
@@ -36,6 +36,7 @@ function ContactForm() {
         <Row className='mb-3'>
           <textarea
             id="message"
+            type="message"
             name="message"
             className='messageInput'
           />

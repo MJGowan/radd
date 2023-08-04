@@ -10,6 +10,11 @@
     padding-right: 20px;
 }
 
+.myname{
+    margin-top: -30px !important;
+    text-align: right;
+}
+
 #footer .logos{
     color: white;
     font-size: 25px;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pavanam&display=swap');
 
 body{
-    overflow-x: hidden;
+    overflow-x:hidden;
     background-color: #f3f5f7 !important;
     color:#283542 !important;
 }
@@ -30,41 +30,6 @@ hr {
 
 .logos{
     margin-right: 15px;
-}
-
-/* ----- */
-
-#hero{
-    background-image: url('./assets/hero-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-}
-
-.hero-title{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow:  3px 3px #2d2d2d69;
-    font-weight: bold;
-}
-
-/* ----- */
-
-.holdTxt {
-    max-width: 65%;
-}
-
-.about-txt {
-    padding-top: 2vh;
-}
-
-.holdMom{
-    max-width: 30%;
-}
-.mom{
-    aspect-ratio: 1/1;
-    max-height: 450px;
 }
 
 /* ----- */
@@ -117,6 +82,16 @@ hr {
 
     .about-txt {
         padding-top: 2vh;
+    }
+
+    .section-title {
+        font-family: 'Pavanam', sans-serif;
+        font-size: 20px;
+    }
+    
+    hr {
+        max-width: 40vw;
+        margin-top: -23px !important;
     }
 }
 

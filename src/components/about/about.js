@@ -5,7 +5,7 @@ import './about.css';
 export default function about() {
     const mom = require('../../assets/becky.png');
     return (
-      <div>
+     
         <Container id='about'>
           <p className='section-title'>About Us</p>
           <hr />
@@ -18,6 +18,6 @@ export default function about() {
             </div>
           </Row>
         </Container>
-      </div>
+
     )
 }

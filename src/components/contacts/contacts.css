@@ -1,9 +1,10 @@
 #contacts {
-    background-image: url('../../assets/contacts-unsplash.jpg');
+    /* background-image: url('../../assets/contacts-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     padding-top: 5vh;
     padding-bottom: 5vh;
+    color: #283542;
 }
 
 .contactInfo {
@@ -12,24 +13,30 @@
 
 .formContainer {
     background-color: #283542f7;
-    border-radius: 10px;
+    /* background-image: url('../../assets/contacts-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%; */
+    border-radius: 5px;
     color: white;
 }
 
 .emailInput {
     border-radius: 3px;
-    border-color: transparent;
+    border-color: #283542;
+    border-width: 1px;
 }
 
 .messageInput {
-    border-radius: 5px;
+    border-radius: 3px;
     width: 100%;
+    border-color: #283542;
 }
 
 .submitBtn {
     border-radius: 5px;
-    background-color: #63747D;
-    border-color: #63747D;
+    background-color: #283542;
+    border-color: #283542;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
