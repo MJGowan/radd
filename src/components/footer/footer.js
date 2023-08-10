@@ -49,17 +49,10 @@ export default function Footer() {
         <Col>
           <p>RaddCapitalBecky@gmail.com</p>
         </Col>
-        <Col className='right-half myname col-lg-3'>
+        <Col className='right-half myname col-lg-3 col-md-4 col-sm-4'>
           <a href='https://mjgowan.dev' style={{color: 'white', textDecoration: 'none'}}>
-          {
-            window.innerWidth < 768 ? (
-              <p className='d-flex justify-content-end'>Site by Madeline Gowan</p>
-            ) : (
               <p className='d-flex justify-content-end'>Site designed and developed by Madeline Gowan</p>
-            )
-          }
           </a>
-         
         </Col>
       </Row>
     </div>

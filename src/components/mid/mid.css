@@ -19,7 +19,6 @@
 #mid .hero-txt{
     color: white;
     font-weight: bold;
-    font-size:xx-large;
 }
 
 @media (max-width: 550px) {
@@ -31,7 +30,7 @@
     } 
     
     #mid .hero-txt{
-        font-size:large;
+        font-size:20px !important;
     }
 }
 
@@ -43,7 +42,7 @@
     }
 
     #mid .hero-txt{
-        font-size:x-large;
+        font-size:23px !important;
     }
 }
 

@@ -5,7 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 export default function mid() {
   return (
     <div id="mid">
-      <Container className='mid-items'>
+      <Container>
         <Row>
           <Col>
           <p className='hero-txt lato'>Real Estate Solutions for Real Investors</p>

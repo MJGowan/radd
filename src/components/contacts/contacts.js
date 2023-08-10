@@ -110,7 +110,6 @@ export default function contacts() {
             <ContactForm />
           </Col>
         </Row>
-
       </Container>
     </div>
   )

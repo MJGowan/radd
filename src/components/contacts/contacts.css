@@ -1,7 +1,4 @@
 #contacts {
-    /* background-image: url('../../assets/contacts-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: #283542;
@@ -13,10 +10,6 @@
 
 .formContainer {
     background-color: #283542f7;
-    /* background-image: url('../../assets/contacts-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 80%; */
     border-radius: 5px;
     color: white;
 }
@@ -65,15 +58,15 @@
 
     #contacts .logos{
         font-size:30px;
-        margin-right: -5px;
+        margin-left: 7px;
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
     .formContainer {
-        margin-top: 5px;
         padding: 15px;
         min-width: 90%;
         max-width: 95%;
-        margin: auto;
         margin-bottom: 25px;
     }
 
