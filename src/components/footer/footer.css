@@ -1,75 +1,25 @@
 #footer{
-    background-color:#283542;
+    background-color:#000611;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
     width: 100vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.link{
+    color: white;
+
 }
 
 .right-half{
-    padding-right: 20px;
+    text-align: end;
 }
 
-.myname{
-    margin-top: -30px !important;
-    text-align: right;
+@media (max-width: 768px) {
+.right-half{
+    text-align: center;
 }
-
-#footer .logos{
-    color: white;
-    font-size: 25px;
+.left-half{
+    text-align: center;
 }
-
-@media (max-width: 414px) {
-    #footer{
-        padding-top: 15px;
-    }
-    #footer p {
-        font-size: 10px;
-    }
-
-    #footer .logos{
-        font-size: 19px;
-        margin-top: -10px;
-        margin-right: 5px;
-    }
-}
-
-@media (min-width: 414px) and (max-width: 768px) {
-    #footer{
-        padding-top: 20px;
-    }
-
-    #footer .logos{
-        font-size: 20px;
-    }
-
-    #footer .logo-container{
-        margin-top: -5px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1000px) {
-    #footer{
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-    #footer{
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #footer{
-        padding-top: 20px;
-    }
-    #footer .logos{
-        margin-right: 10px;
-    }
-
-    #footer .logo-container{
-        margin-right: -10px;
-    }
 }

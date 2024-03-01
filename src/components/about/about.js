@@ -1,17 +1,97 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import './about.css';
 
 export default function about() {
-    return (
-     
-        <Container id='about'>
-          <p className='section-title'>About Us</p>
-          <hr />
-          <Row>
-              <p className='lato about-txt'>With a deep-rooted commitment to making a positive impact, and an extensive background in diverse industries, RaddxCap is your trusted partner for dynamic investments. When it comes to real estate opportunities, we have a deep understanding of the market dynamics and a keen eye for spotting potential. We assist both investors and business owners in identifying and acquiring properties with a comprehensive approach that encompasses due diligence, financial analysis, negotiation, and funding, ensuring a seamless transition and setting the stage for long-term success.</p>
-          </Row>
-        </Container>
+    const fsfImg = require('../../assets/FullStackFunding.png');
+    const csImg = require('../../assets/CreativeSolutions.png');
+    const mkImg = require('../../assets/MarketKnowledge.png');
 
+    return (
+        <div id='about'>
+            <Container>
+                <Row>
+                    <Col>
+                        <h3 className='section-title'>ABOUT US</h3>
+                    </Col>
+                </Row>
+                <Row className='d-none d-md-block'>
+                    <Row className='checkerRow'>
+                        <Col className='imgCol'>
+                            <img src={fsfImg} className='image' />
+                        </Col>
+                        <Col className='txtCol'>
+                            <h6 className='miniTitle'>Full Stack Funding</h6>
+                            <p className='colTxt'>From commercial real estate to fix & flip investments, gap funding to small business loans, we have solutions for any situation. With an extensive network of lenders and private money partners, we believe there's a player for every occasion. We're here to help you find them.</p>
+                        </Col>
+                    </Row>
+                    <Row className='checkerRow'>
+                        <Col className='txtCol'>
+                            <h6 className='miniTitle'>Creative Solutions</h6>
+                            <p className='colTxt'>We understand the ever-changing real estate market, and the need for creative solutions. We focus on creative strategies to make even the most complicated deals work.</p>
+                        </Col>
+                        <Col className='imgCol'>
+                            <img src={csImg} className='image' />
+                        </Col>
+                    </Row>
+                    <Row className='checkerRow'>
+                        <Col className='imgCol'>
+                            <img src={mkImg} className='image' />
+                        </Col>
+                        <Col className='txtCol'>
+                            <h6 className='miniTitle'>Market Knowledge</h6>
+                            <p className='colTxt'>With decades of experience in the real estate and investment space, our team brings a combination of market knowledge, capital market experience, and private money partnerships to ensure all of our clients are set up for success.</p>
+                            <div id='topRequests'></div>
+                        </Col>
+                    </Row>
+                </Row>
+                <Row className='d-block d-md-none'>
+                    <Col>
+                        <Carousel fade controls={false}>
+                            <Carousel.Item className='d-flex justify-content-center'>
+                                <div className='myCard'>
+                                    <Container>
+                                        <Row>
+                                            <Col className='my-3'>
+                                                <h6 className='miniTitle'>Full Stack Funding</h6>
+                                                <img src={fsfImg} className='cardImage' />
+                                                <p className='colTxt'>From commercial real estate to fix & flip investments, gap funding to small business loans, we have solutions for any situation. With an extensive network of lenders and private money partners, we believe there's a player for every occasion. We're here to help you find them.</p>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item className='d-flex justify-content-center'>
+                                <div className='myCard'>
+                                    <Container>
+                                        <Row>
+                                            <Col className='my-3'>
+                                                <h6 className='miniTitle'>Creative Solutions</h6>
+                                                <img src={csImg} className='cardImage' />
+                                                <p className='colTxt'>We understand the ever-changing real estate market, and the need for creative solutions. We focus on creative strategies to make even the most complicated deals work.</p>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item className='d-flex justify-content-center'>
+                                <div className='myCard'>
+                                    <Container>
+                                        <Row>
+                                            <Col className='my-3'>
+                                                <h6 className='miniTitle'>Market Knowledge</h6>
+                                                <img src={csImg} className='cardImage' />
+                                                <p className='colTxt'>With decades of experience in the real estate and investment space, our team brings a combination of market knowledge, capital market experience, and private money partnerships to ensure all of our clients are set up for success.</p>
+                                                <div id='mobileRequests'></div>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     )
 }

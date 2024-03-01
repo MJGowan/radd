@@ -1,61 +1,58 @@
-.about-txt {
-    padding-top: 2vh;
-    padding-bottom: 3vh;
+#about{
+    margin-bottom: 5%;
 }
 
-@media (max-width: 414px) {
-    #about {
-        margin-top: -5vh;
-    }
-    .about-txt {
-        padding-top: 2vh;
-    }
+.checkerRow{
+    margin-bottom: 20px;
 }
 
-@media (min-width: 414px) and (max-width: 768px) {
-    #about {
-        margin-top: -3vh;
-    }
-
-    .about-txt {
-        padding-top: 2vh;
-    }
+.txtCol{
+    padding: 3%;
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
-    #about {
-        margin-top: -3vh;
+.colTxt{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#about .image {
+    width: 100%;
+    min-height: 100%;
+}
+
+.miniTitle{
+    font-family: 'Lalezar', system-ui;
+    text-align: center;
+}
+
+#about .myCard{
+    border: white solid 1px;
+    background-color: #181F28;
+    height: 425px;
+    width: 350px;
+}
+
+.cardImage{
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #about{
+        margin-bottom: 5%;
     }
     
-    .holdTxt{
-        max-width: 55%;
+    .checkerRow{
+        margin-bottom: 20px;
     }
 
-    .holdMom {
-        display: flex;
-        justify-content: start;
-        margin-top: -9vh;
-        margin-left: -20px;
-    }
-    .mom{
-        max-height: 425px;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-    .holdTxt{
-        max-width: 60%;
+    .txtCol{
+        padding: 2%;
     }
     
-    .holdMom {
-        float: right;
-        margin-top: -20vh;
-    }
-}
-
-@media (min-width: 1200px) {
-    .holdMom {
-        float: right;
-        margin-top: -23vh; 
+    .colTxt{
+        padding-left: 0;
+        padding-right: 0;
     }
 }

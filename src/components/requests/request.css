@@ -1,0 +1,54 @@
+#requests{
+    background-image: url('../../assets/request-unsplash.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+}
+
+#requests .section-title{
+    color: black;
+}
+
+#requests .myCard{
+    border: none;
+    background-color: #181F28;
+    height: 400px;
+    width: 350px;
+}
+
+.cardImage{
+    width: 100%;
+    height: 150px;
+    min-height: 100%;
+    margin-bottom: 10px;
+}
+
+.requestBtn{
+    font-family: 'Lalezar', system-ui;
+    border-radius: 5px;
+    background-color: #181F28;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media  (max-width: 768px) {
+    #requests .myCard{
+        height: 430px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #requests .myCard{
+        height: 390px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #requests .myCard{
+        height: 410px;
+    }
+}

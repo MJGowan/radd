@@ -1,181 +1,38 @@
-#contacts {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    color: #283542;
+#contacts{
+    
+}
+.messageField{
+    height: 100px;
+
 }
 
-.contactInfo {
-    font-size: 25px;
-}
-
-.formContainer {
-    background-color: #283542f7;
+.sendBtn{
+    background-color: #FFCE00;
+    color: black;
+    border: none;
     border-radius: 5px;
-    color: white;
-}
-
-.emailInput {
-    border-radius: 3px;
-    border-color: #283542;
-    border-width: 1px;
-}
-
-.messageInput {
-    border-radius: 3px;
     width: 100%;
-    border-color: #283542;
+    font-family: 'Lalezar', system-ui;
+    font-size: large;
 }
 
-.submitBtn {
-    border-radius: 5px;
-    background-color: #283542;
-    border-color: #283542;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
+.tinyTitle{
+    font-family: 'Lalezar', system-ui;
+    color: #FFCE00;
 }
 
-#contacts .logos{
-    font-size:40px;
-    color: #283542;
-}
-
-#contacts .logo-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 550px) {
-    #contacts {
-        padding-top: 2vh;
-        padding-bottom: 1vh;
+@media (max-width: 768px) {
+    .infoTxtOne{
+        text-align: center;
     }
-
-    .contactInfo {
-        font-size: 20px;
+    .infoTxtTwo{
+        display: flex;
     }
-
-    #contacts .logos{
-        font-size:30px;
-        margin-left: 7px;
-        margin-right: 0;
-        margin-bottom: 15px;
+    .tinyTitle{
+        text-align: center;
     }
-
-    .formContainer {
-        padding: 15px;
-        min-width: 90%;
-        max-width: 95%;
-        margin-bottom: 25px;
-    }
-
-    .emailInput {
-        width: 100%;
-        margin: auto;
-    }
-
-    .messageInput {
-        width: 100%;
-        height: 100px;
-        margin: auto;
-    }
-
-    .submitBtn {
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-    }
-}
-
-@media (min-width: 550px) and (max-width: 768px) {
-    .contactInfo {
-        font-size: 20px;
-    }
-
-    .formContainer {
-        padding: 15px;
-        min-width: 90%;
-        max-width: 95%;
-        margin: auto;
-    }
-
-    .emailInput {
-        width: 45%;
-    }
-
-    .messageInput {
-        width: 90vw;
-        height: 100px;
-    }
-
-    .submitBtn {
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-    }
-
-    #contacts .logos{
-        font-size:30px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1000px) {
-    .contactInfo {
-        font-size: 20px;
-    }
-
-    .formContainer {
-        margin-top: 25px;
-        padding: 25px;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .emailInput {
-        width: 45%;
-    }
-
-    .messageInput {
-        width: 98%;
-        height: 100px;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-    .contactInfo {
-        font-size: 20px;
-    }
-
-    .formContainer {
-        padding: 20px;
-        width: 45%;
-    }
-
-    .emailInput {
-        width: 55%;
-    }
-
-    .messageInput {
-        height: 125px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contactInfo {
-        font-size: 25px;
-    }
-
-    .formContainer {
-        padding: 30px;
-        width: 45%;
-    }
-
-    .emailInput {
-        width: 55%;
-    }
-
-    .messageInput {
-        height: 125px;
+    .days{
+        text-align: end;
+        margin-left: -10%;
     }
 }

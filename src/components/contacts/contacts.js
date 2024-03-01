@@ -1,113 +1,66 @@
 import React from 'react';
 import './contacts.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import { useForm, ValidationError } from '@formspree/react';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-
-function ContactForm() {
-  const [state, handleSubmit] = useForm("mwkdeknl");
-  if (state.succeeded) {
-    return <ContactForm />;
-  }
-  return (
-    <form onSubmit={handleSubmit} className='lato'>
-      <Container>
-        <Row className='mb-2'>
-          <label htmlFor="email" style={{color: 'white'}}>
-            Email Address
-          </label>
-        </Row>
-        <Row className='mb-3'>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            className='emailInput'
-          />
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-          />
-        </Row>
-        <Row className='mb-3'>
-          <textarea
-            id="message"
-            type="message"
-            name="message"
-            className='messageInput'
-          />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-        </Row>
-        <Row>
-          <Col className='d-flex justify-content-end'>
-            <button type="submit" disabled={state.submitting} className='submitBtn'>
-              Submit
-            </button>
-          </Col>
-        </Row>
-      </Container>
-    </form>
-  );
-}
-
+import { InputGroup, Form, Container, Row, Col } from 'react-bootstrap';
 
 export default function contacts() {
   return (
     <div id="contacts">
       <Container className='contact-container'>
-        <div>
-          <p className='section-title'>Contacts</p>
-          <hr className='hrLength' />
-        </div>
         <Row>
-          <Col className='col-lg-6'>
-            <Container>
-              <div className='lato contactInfo'>
-                <p>(209) 313-9953</p>
-                <p>RaddCapitalBecky@gmail.com</p>
-              </div>
-              <div className='d-none d-lg-block logo-container'>
-                <a href="https://www.facebook.com/people/RaddxCap-Investments/100090114548054/?comment_id=Y29tbWVudDo2Mjg3NTU3ODM3OTQzNDI2XzEyNTc0NTU4OTQ4NDUwMzE%3D" >
-                  <FacebookIcon className='logos' />
-                </a>
-                <a href="https://twitter.com/RaddxCapxBecky" >
-                  <TwitterIcon className='logos' />
-                </a>
-                <a href="https://www.linkedin.com/in/raddxcap/">
-                  <LinkedInIcon className='logos' />
-                </a>
-                <a href="https://www.instagram.com/RaddxCapxInvestments/">
-                  <InstagramIcon className='logos' />
-                </a>
-              </div>
-            </Container>
+          <Col>
+            <h3 className='section-title'>CONTACT US</h3>
           </Col>
-          <Col className='col-md-6 d-lg-none'>
-            <div>
-            <a href="https://www.facebook.com/people/RaddxCap-Investments/100090114548054/?comment_id=Y29tbWVudDo2Mjg3NTU3ODM3OTQzNDI2XzEyNTc0NTU4OTQ4NDUwMzE%3D" >
-                  <FacebookIcon className='logos' />
-                </a>
-                <a href="https://twitter.com/RaddxCapxBecky" >
-                  <TwitterIcon className='logos' />
-                </a>
-                <a href="https://www.linkedin.com/in/raddxcap/">
-                  <LinkedInIcon className='logos' />
-                </a>
-                <a href="https://www.instagram.com/RaddxCapxInvestments/">
-                  <InstagramIcon className='logos' />
-                </a>
-            </div>
+        </Row>
+        <Row>
+          <Col className='col-12 col-md-6'>
+            <InputGroup className="mb-3">
+              <Form.Control
+                aria-label="Name"
+                placeholder='Name'
+                aria-describedby="inputGroup-nameInput"
+              />
+            </InputGroup>
+            <InputGroup className="mb-3">
+              <Form.Control
+                aria-label="Email"
+                placeholder='Email'
+                aria-describedby="inputGroup-emailInput"
+              />
+            </InputGroup>
+            <InputGroup className="mb-3 messageField">
+              <Form.Control
+                aria-label="Message"
+                placeholder='Message'
+                className='messagePlaceholder'
+                aria-describedby="inputGroup-messageInput"
+              />
+            </InputGroup>
+            <button aria-label='Send Button' className='mb-5 py-2 sendBtn'>Send</button>
           </Col>
-          <Col className='col-lg-6 col-md-12 formContainer'>
-            <ContactForm />
+          <Col className='col-md-1'></Col>
+          <Col className='col-12 col-md-5 infoTxtCol'>
+            <Row className='infoTxtOne'>
+              <Col>
+                <p>(209) 313-9953 <br/> Becky@raddcapitalsolutions.com</p>
+              </Col>
+            </Row>
+            <br className='d-block d-md-none'/>
+            <Row className='infoTxtTwo'>
+                <Col>
+                  <h5 className='tinyTitle'>Hours</h5>
+                  <Row>
+                  <Col className='col-6 col-md-2 days'>
+                    <p>Mon <br/> Tue <br/> Wed <br/> Thu <br/> Fri <br/> Sat <br/> Sun</p>
+                  </Col>
+                  <Col>
+                  <p>09:00 am - 05:00 pm <br/> 09:00 am - 05:00 pm <br/> 09:00 am - 05:00 pm <br/> 09:00 am - 05:00 pm <br/> 09:00 am - 05:00 pm <br/> Closed <br/> Closed</p>
+                  </Col>
+                  </Row>
+                </Col>
+            </Row>
+          </Col>
+          <Col>
+
           </Col>
         </Row>
       </Container>
