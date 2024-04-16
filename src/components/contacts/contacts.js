@@ -11,6 +11,11 @@ export default function contacts() {
             <h3 className='section-title'>CONTACT US</h3>
           </Col>
         </Row>
+        <Row className='d-block d-md-none infoTxtOne'>
+              <Col>
+                <p>(209) 313-9953 <br/> Becky@raddcapitalsolutions.com</p>
+              </Col>
+            </Row>
         <Row>
           <Col className='col-12 col-md-6'>
             <InputGroup className="mb-3">
@@ -31,7 +36,6 @@ export default function contacts() {
               <Form.Control
                 aria-label="Message"
                 placeholder='Message'
-                className='messagePlaceholder'
                 aria-describedby="inputGroup-messageInput"
               />
             </InputGroup>
@@ -39,12 +43,11 @@ export default function contacts() {
           </Col>
           <Col className='col-md-1'></Col>
           <Col className='col-12 col-md-5 infoTxtCol'>
-            <Row className='infoTxtOne'>
+            <Row className='d-none d-md-block infoTxtOne'>
               <Col>
                 <p>(209) 313-9953 <br/> Becky@raddcapitalsolutions.com</p>
               </Col>
             </Row>
-            <br className='d-block d-md-none'/>
             <Row className='infoTxtTwo'>
                 <Col>
                   <h5 className='tinyTitle'>Hours</h5>

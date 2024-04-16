@@ -11,15 +11,16 @@
 
 #requests .myCard{
     border: none;
+    border-radius: 5px;
     background-color: #181F28;
-    height: 400px;
-    width: 350px;
+    height: 100%;
+    width: 375px;
+    font-size: 1rem;
 }
 
 .cardImage{
     width: 100%;
     height: 150px;
-    min-height: 100%;
     margin-bottom: 10px;
 }
 
@@ -35,20 +36,10 @@
     padding-bottom: 10px;
 }
 
-@media  (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #requests .myCard{
-        height: 430px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    #requests .myCard{
-        height: 390px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-    #requests .myCard{
-        height: 410px;
+        height: 100%;
+        width: 350px;
+        font-size: 1rem;
     }
 }

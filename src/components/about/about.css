@@ -10,7 +10,7 @@
     padding: 3%;
 }
 
-.colTxt{
+#about .colTxt{
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -20,25 +20,17 @@
     min-height: 100%;
 }
 
-.miniTitle{
-    font-family: 'Lalezar', system-ui;
-    text-align: center;
+@media screen and (max-width: 767px){
+    .checkerRow{
+        display: flex;
+        justify-content: center;
+    }
+    .imgCol{
+        margin-bottom: 15px;
+    }
 }
 
-#about .myCard{
-    border: white solid 1px;
-    background-color: #181F28;
-    height: 425px;
-    width: 350px;
-}
-
-.cardImage{
-    width: 100%;
-    min-height: 100%;
-    margin-bottom: 10px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 992px) {
     #about{
         margin-bottom: 5%;
     }
@@ -51,8 +43,26 @@
         padding: 2%;
     }
     
-    .colTxt{
+    #about .colTxt{
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #about .colTxt{
+        font-size: large;
+    }
+    .checkerRow{
+        margin-bottom: 45px;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    #about .colTxt{
+        font-size: x-large;
+    }
+    .checkerRow{
+        margin-bottom: 45px;
     }
 }

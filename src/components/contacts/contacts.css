@@ -3,7 +3,6 @@
 }
 .messageField{
     height: 100px;
-
 }
 
 .sendBtn{
@@ -19,14 +18,18 @@
 .tinyTitle{
     font-family: 'Lalezar', system-ui;
     color: #FFCE00;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
     .infoTxtOne{
         text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
     }
     .infoTxtTwo{
         display: flex;
+        font-size: 1.1rem;
     }
     .tinyTitle{
         text-align: center;
@@ -34,5 +37,11 @@
     .days{
         text-align: end;
         margin-left: -10%;
+    }
+}
+
+@media (max-width: 568px) {
+    .days{
+        margin-left: -12%;
     }
 }
